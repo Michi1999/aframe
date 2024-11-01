@@ -3,10 +3,10 @@ name: Security Check
 on:
   push:
     branches:
-      - main  # O el nombre del branch donde deseas que se ejecute
+      - master  # Asegúrate de que esto coincida con tu rama
   pull_request:
     branches:
-      - main  # Esto es opcional, pero útil si deseas ejecutar el workflow en PRs
+      - master  # Esto es opcional, pero útil si deseas ejecutar el workflow en PRs
 
 jobs:
   security:

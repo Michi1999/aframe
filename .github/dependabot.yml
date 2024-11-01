@@ -1,8 +1,9 @@
 version: 2
 updates:
-  - package-ecosystem: "npm"  # Cambia según el ecosistema de tu proyecto
-    directory: "/"              # Ruta del directorio del proyecto
+  # Enable version updates for npm
+  - package-ecosystem: "npm"
+    # Look for `package.json` and `lock` files in the `root` directory
+    directory: "/"
+    # Check the npm registry for updates every day (weekdays)
     schedule:
-      interval: "weekly"        # Frecuencia de las actualizaciones
-    commit-message:
-      prefix: "fix"             # Prefijo para el mensaje de commit
+      interval: "daily"           # Prefijo para el mensaje de commit

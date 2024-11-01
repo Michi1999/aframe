@@ -87,7 +87,7 @@
     "mozilla-download": "^1.1.1",
     "replace-in-file": "^8.2.0",
     "semistandard": "^9.0.0",
-    "shelljs": "^0.7.7",
+    "shelljs": "^0.8.5",
     "shx": "^0.3.4",
     "sinon": "^1.17.5",
     "sinon-chai": "2.14.0",

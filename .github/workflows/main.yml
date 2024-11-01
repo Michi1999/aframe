@@ -14,13 +14,8 @@ jobs:
     - name: Check out code
       uses: actions/checkout@v2
 
-    - name: Install ESLint
-      run: npm install eslint
+    - name: Install dependencies
+      run: npm install
 
-    - name: Install yamllint
-      run: |
-        python3 -m pip install --upgrade pip
-        python3 -m pip install yamllint
-
-    - name: Run yamllint
-      run: yamllint .github/workflows/*.yml
+    - name: Run security check
+      run: npm audit

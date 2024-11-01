@@ -1,12 +1,13 @@
+---
 name: Security Check
 
 on:
   push:
     branches:
-      - master  # Asegúrate de que esto coincida con tu rama
+      - master
   pull_request:
     branches:
-      - master  # Esto es opcional, pero útil si deseas ejecutar el workflow en PRs
+      - master
 
 jobs:
   security:

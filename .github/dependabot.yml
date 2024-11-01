@@ -1,0 +1,6 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"  # Cambia según el ecosistema del proyecto
+    directory: "/"              # Ruta del directorio del proyecto
+    schedule:
+      interval: "weekly"

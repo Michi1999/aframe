@@ -88,7 +88,7 @@
     "replace-in-file": "^2.5.3",
     "semistandard": "^9.0.0",
     "shelljs": "^0.7.7",
-    "shx": "^0.2.2",
+    "shx": "^0.3.4",
     "sinon": "^1.17.5",
     "sinon-chai": "2.8.0",
     "snazzy": "^5.0.0",

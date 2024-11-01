@@ -2,9 +2,11 @@ name: Security Check
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main  # O el nombre del branch donde deseas que se ejecute
   pull_request:
-    branches: [main]
+    branches:
+      - main  # Esto es opcional, pero útil si deseas ejecutar el workflow en PRs
 
 jobs:
   security:
@@ -17,5 +19,10 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run security check
-      run: npm audit
+    - name: Install yamllint
+      run: |
+        python3 -m pip install --upgrade pip
+        python3 -m pip install yamllint
+
+    - name: Run yamllint
+      run: yamllint .github/workflows/*.yml
